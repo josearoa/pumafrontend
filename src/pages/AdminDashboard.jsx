@@ -12,6 +12,7 @@ const AdminDashboard = () => {
   const [orders, setOrders] = useState([]);
   const [selectedOrder, setSelectedOrder] = useState(null);
   const navigate = useNavigate();
+  const API_BASE = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     if (!isAuthenticated()) {
@@ -23,7 +24,7 @@ const AdminDashboard = () => {
 
   const fetchOrders = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/orders', {
+      const res = await axios.get(`${API_BASE}/orders`, {
         headers: {
           Authorization: `Bearer ${getToken()}`
         }
@@ -36,7 +37,7 @@ const AdminDashboard = () => {
 
   const validateOrder = async (id) => {
     try {
-      await axios.post(`http://localhost:5000/orders/${id}/validate`, {}, {
+      await axios.post(`${API_BASE}/orders/${id}/validate`, {}, {
         headers: {
           Authorization: `Bearer ${getToken()}`
         }
@@ -62,7 +63,7 @@ const AdminDashboard = () => {
 
   const downloadFile = async (orderId, filename) => {
     try {
-      const res = await axios.get(`http://localhost:5000/orders/${orderId}/download`, {
+      const res = await axios.get(`${API_BASE}/orders/${orderId}/download`, {
         headers: {
           Authorization: `Bearer ${getToken()}`
         },
@@ -85,7 +86,7 @@ const AdminDashboard = () => {
     <div className="admin-dashboard">
       <header className="admin-header improved">
         <div className="left-header">
-          <img src="/assets/logos/puma-logo.png" alt="Puma Logo" className="logo-puma" />
+          <img src="/assets/logos/puma-37624.png" alt="Puma Logo" className="logo-puma" />
           <span className="logo-text">Puma Chile PO Management</span>
         </div>
         <nav className="right-header">

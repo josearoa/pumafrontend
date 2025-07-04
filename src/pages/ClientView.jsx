@@ -13,6 +13,7 @@ const ClientView = () => {
   const [company, setCompany] = useState('');
   const [empresa, setEmpresa] = useState('');
   const navigate = useNavigate();
+  const API_BASE = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     if (!isAuthenticated()) {
@@ -28,9 +29,8 @@ const ClientView = () => {
       const token = getToken();
       const decoded = jwtDecode(token);
       setNombreUsuario(decoded.name || decoded.username);
-      setCompany(decoded.company); 
+      setCompany(decoded.company);
       setEmpresa(decoded.company?.toLowerCase() || 'empresa');
-      console.log('Token decodificado:', decoded); 
     } catch (err) {
       console.error('Error al decodificar token:', err);
     }
@@ -38,7 +38,7 @@ const ClientView = () => {
 
   const fetchOrders = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/orders', {
+      const res = await axios.get(`${API_BASE}/orders`, {
         headers: {
           Authorization: `Bearer ${getToken()}`
         }
@@ -57,7 +57,7 @@ const ClientView = () => {
     formData.append('file', file);
 
     try {
-      await axios.post('http://localhost:5000/upload', formData, {
+      await axios.post(`${API_BASE}/upload`, formData, {
         headers: {
           Authorization: `Bearer ${getToken()}`
         }
@@ -146,3 +146,4 @@ const ClientView = () => {
 };
 
 export default ClientView;
+
