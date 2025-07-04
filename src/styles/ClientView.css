@@ -1,114 +1,137 @@
+/* ===== SECCIONES PRINCIPALES (UPLOAD Y HISTORIAL) ===== */
+/* Estilos compartidos para las secciones de subida de archivos e historial */
 .upload-section,
 .history-section {
-  background-color: #ffffff;
-  padding: 25px 30px;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  width: 95%;
-  max-width: 1000px;
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 25px 30px; /* Espaciado interno generoso */
+  margin: 20px auto; /* Margen automático para centrado */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* Sombra sutil */
+  width: 95%; /* Ancho del 95% del contenedor */
+  max-width: 1000px; /* Ancho máximo para pantallas grandes */
 }
 
+/* Títulos de las secciones */
 .upload-section h2,
 .history-section h2 {
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  color: #333;
+  margin-bottom: 20px; /* Espaciado inferior */
+  font-size: 1.5rem; /* Tamaño de fuente grande */
+  color: #333; /* Color gris oscuro */
 }
 
+/* ===== SECCIÓN DE SUBIDA DE ARCHIVOS ===== */
+/* Input de tipo file para seleccionar archivos */
 .upload-section input[type="file"] {
-  margin-right: 10px;
-  font-size: 0.95rem;
+  margin-right: 10px; /* Espaciado derecho */
+  font-size: 0.95rem; /* Tamaño de fuente ligeramente menor */
 }
 
+/* Botón de subida de archivos */
 .upload-section button {
-  padding: 5px 15px;
-  font-size: 0.95rem;
-  background-color: #007bff;
-  border: none;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 5px 15px; /* Espaciado interno */
+  font-size: 0.95rem; /* Tamaño de fuente */
+  background-color: #007bff; /* Fondo azul */
+  border: none; /* Sin borde */
+  color: white; /* Texto blanco */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de mano */
 }
 
+/* Efecto hover del botón de subida */
 .upload-section button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Azul más oscuro al hover */
 }
 
+/* ===== TABLA DEL HISTORIAL DE ÓRDENES ===== */
+/* Estilos base para la tabla */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.95rem;
+  width: 100%; /* Ancho completo */
+  border-collapse: collapse; /* Colapsar bordes entre celdas */
+  font-size: 0.95rem; /* Tamaño de fuente ligeramente menor */
 }
 
+/* Estilos para headers y celdas de la tabla */
 th,
 td {
-  padding: 12px 15px;
-  border-bottom: 1px solid #ddd;
-  text-align: left;
+  padding: 12px 15px; /* Espaciado interno de celdas */
+  border-bottom: 1px solid #ddd; /* Línea separadora inferior */
+  text-align: left; /* Alineación de texto a la izquierda */
 }
 
+/* Efecto hover en las filas de la tabla */
 tr:hover {
-  background-color: #f8f9fa;
+  background-color: #f8f9fa; /* Fondo gris claro al hover */
 }
 
+/* ===== BADGES DE ESTADO ===== */
+/* Estilo base para los badges de estado */
 .status {
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-weight: 500;
+  padding: 4px 10px; /* Espaciado interno */
+  border-radius: 12px; /* Bordes muy redondeados (píldora) */
+  font-weight: 500; /* Peso de fuente medio */
 }
 
+/* Estado aprobado - Verde */
 .status.aprobado {
-  background-color: #d4edda;
-  color: #155724;
+  background-color: #d4edda; /* Fondo verde claro */
+  color: #155724; /* Texto verde oscuro */
 }
 
+/* Estado pendiente - Amarillo */
 .status.pendiente {
-  background-color: #fff3cd;
-  color: #856404;
+  background-color: #fff3cd; /* Fondo amarillo claro */
+  color: #856404; /* Texto amarillo oscuro */
 }
 
+/* Estado error - Rojo */
 .status.error {
-  background-color: #f8d7da;
-  color: #721c24;
+  background-color: #f8d7da; /* Fondo rojo claro */
+  color: #721c24; /* Texto rojo oscuro */
 }
 
+/* ===== HEADER DEL CLIENTE ===== */
+/* Header mejorado con layout flexbox */
 .client-header.improved {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f9f9f9;
-  padding: 20px 40px;
-  border-bottom: 1px solid #ddd;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: space-between; /* Distribución entre extremos */
+  align-items: center; /* Centrado vertical */
+  background-color: #f9f9f9; /* Fondo gris muy claro */
+  padding: 20px 40px; /* Espaciado interno generoso */
+  border-bottom: 1px solid #ddd; /* Línea separadora inferior */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
 }
 
+/* Sección izquierda del header (logo y nombre) */
 .client-header .left {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  align-items: center; /* Centrado vertical */
+  gap: 1rem; /* Espaciado entre elementos */
 }
 
+/* Logo del cliente */
 .client-header .client-logo {
-  height: 60px;
-  object-fit: contain;
+  height: 60px; /* Altura fija */
+  object-fit: contain; /* Mantener proporciones */
 }
 
+/* Nombre de la empresa cliente */
 .client-header .client-name {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #333;
+  font-size: 1.5rem; /* Tamaño de fuente grande */
+  font-weight: 600; /* Peso de fuente semi-bold */
+  color: #333; /* Color gris oscuro */
 }
 
+/* Sección central del header (mensaje de bienvenida) */
 .client-header .center .welcome-text {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #555;
+  font-size: 1.8rem; /* Tamaño de fuente muy grande */
+  font-weight: 500; /* Peso de fuente medio */
+  color: #555; /* Color gris medio */
 }
 
+/* Sección derecha del header (botón logout) */
 .client-header .right {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #007bff;
-  cursor: pointer;
+  font-size: 1rem; /* Tamaño de fuente normal */
+  font-weight: bold; /* Texto en negrita */
+  color: #007bff; /* Color azul de enlace */
+  cursor: pointer; /* Cursor de mano para indicar interacción */
 }

@@ -1,159 +1,191 @@
 /* AdminDashboard.css */
+/* Estilos para el panel de administración del dashboard */
 
+/* ===== CONTENEDOR PRINCIPAL ===== */
+/* Estilos base del dashboard administrativo */
 .admin-dashboard {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fafafa;
-  padding: 1rem 2rem;
+  font-family: 'Segoe UI', sans-serif; /* Fuente moderna y legible */
+  background-color: #fafafa; /* Fondo gris claro */
+  padding: 1rem 2rem; /* Espaciado interno */
 }
 
+/* ===== HEADER DEL DASHBOARD ===== */
+/* Header mejorado con layout flexbox para logo y navegación */
 .admin-header.improved {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 1.5rem;
+  justify-content: space-between; /* Distribución entre extremos */
+  align-items: center; /* Centrado vertical */
+  background-color: #fff; /* Fondo blanco */
+  padding: 1rem 2rem; /* Espaciado interno */
+  border-bottom: 1px solid #ddd; /* Línea separadora inferior */
+  margin-bottom: 1.5rem; /* Margen inferior */
 }
 
+/* Sección izquierda del header (logo y texto) */
 .left-header {
   display: flex;
-  align-items: center;
+  align-items: center; /* Alineación vertical centrada */
 }
 
+/* Estilos para el logo de Puma */
 .logo-puma {
-  height: 50px;
-  margin-right: 15px;
+  height: 50px; /* Altura fija del logo */
+  margin-right: 15px; /* Espaciado derecho */
 }
 
+/* Texto del logo/título */
 .logo-text {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
+  font-size: 1.5rem; /* Tamaño de fuente grande */
+  font-weight: bold; /* Texto en negrita */
+  color: #333; /* Color gris oscuro */
 }
 
+/* Sección derecha del header (navegación y botones) */
 .right-header {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  align-items: center; /* Alineación vertical centrada */
+  gap: 1rem; /* Espaciado entre elementos */
 }
 
+/* Enlaces de navegación en el header */
 .right-header a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: 500;
+  text-decoration: none; /* Sin subrayado */
+  color: #007bff; /* Color azul de enlace */
+  font-weight: 500; /* Peso de fuente medio */
 }
 
+/* Botones en el header */
 .right-header button {
-  background-color: #007bff;
-  border: none;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 5px;
-  cursor: pointer;
+  background-color: #007bff; /* Fondo azul */
+  border: none; /* Sin borde */
+  color: white; /* Texto blanco */
+  padding: 6px 12px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de mano al hover */
 }
 
+/* ===== SECCIÓN DE RESUMEN (TARJETAS) ===== */
+/* Grid responsivo para las tarjetas de estadísticas */
 .summary {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Columnas adaptativas */
+  gap: 1rem; /* Espaciado entre tarjetas */
+  margin-bottom: 2rem; /* Margen inferior */
 }
 
+/* Estilos individuales de cada tarjeta de estadística */
 .card {
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  background-color: #fff; /* Fondo blanco */
+  padding: 1rem; /* Espaciado interno */
+  border-radius: 10px; /* Bordes muy redondeados */
+  text-align: center; /* Texto centrado */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Sombra sutil */
 }
 
+/* ===== SECCIÓN DE GRÁFICOS ===== */
+/* Grid de dos columnas para los gráficos */
 .charts-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  gap: 2rem; /* Espaciado entre gráficos */
+  margin-bottom: 2rem; /* Margen inferior */
 }
 
+/* Contenedor individual para cada gráfico */
 .chart-box {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  background: #fff; /* Fondo blanco */
+  padding: 1rem; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Sombra sutil */
 }
 
+/* ===== SECCIÓN DE VALIDACIÓN DE ÓRDENES ===== */
+/* Contenedor principal de la tabla de validación */
 .validation-queue {
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  background-color: #fff; /* Fondo blanco */
+  padding: 1rem; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Sombra sutil */
 }
 
+/* Estilos de la tabla de órdenes */
 .validation-queue table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
+  width: 100%; /* Ancho completo */
+  border-collapse: collapse; /* Colapsar bordes de celdas */
+  margin-top: 1rem; /* Margen superior */
 }
 
+/* Estilos para headers y celdas de la tabla */
 .validation-queue th,
 .validation-queue td {
-  padding: 0.75rem;
-  text-align: left;
-  border-bottom: 1px solid #eee;
+  padding: 0.75rem; /* Espaciado interno de celdas */
+  text-align: left; /* Alineación izquierda */
+  border-bottom: 1px solid #eee; /* Línea separadora inferior */
 }
 
+/* ===== ESTILOS DE ESTADO DE ÓRDENES ===== */
+/* Badge base para mostrar el estado de las órdenes */
 .status {
-  padding: 4px 8px;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  text-transform: capitalize;
+  padding: 4px 8px; /* Espaciado interno pequeño */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 0.9rem; /* Tamaño de fuente pequeño */
+  text-transform: capitalize; /* Primera letra mayúscula */
 }
 
+/* Estado aprobado - Verde */
 .status.aprobado {
-  background: #d4edda;
-  color: #155724;
+  background: #d4edda; /* Fondo verde claro */
+  color: #155724; /* Texto verde oscuro */
 }
 
+/* Estado pendiente - Amarillo */
 .status.pendiente {
-  background: #fff3cd;
-  color: #856404;
+  background: #fff3cd; /* Fondo amarillo claro */
+  color: #856404; /* Texto amarillo oscuro */
 }
 
+/* Estado error - Rojo */
 .status.error {
-  background: #f8d7da;
-  color: #721c24;
+  background: #f8d7da; /* Fondo rojo claro */
+  color: #721c24; /* Texto rojo oscuro */
 }
 
+/* ===== ESTILOS DE BOTONES ===== */
+/* Estilos base para todos los botones */
 button {
-  background-color: #007bff;
-  border: none;
-  color: white;
-  padding: 5px 10px;
-  margin-right: 5px;
-  border-radius: 4px;
-  cursor: pointer;
+  background-color: #007bff; /* Fondo azul */
+  border: none; /* Sin borde */
+  color: white; /* Texto blanco */
+  padding: 5px 10px; /* Espaciado interno */
+  margin-right: 5px; /* Margen derecho para separación */
+  border-radius: 4px; /* Bordes ligeramente redondeados */
+  cursor: pointer; /* Cursor de mano */
 }
 
+/* Efecto hover para botones */
 button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Azul más oscuro al hover */
 }
 
+/* ===== MODAL DE DETALLES ===== */
+/* Overlay del modal que cubre toda la pantalla */
 .modal {
-  position: fixed;
+  position: fixed; /* Posición fija sobre todo el contenido */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.4);
+  width: 100%; /* Ancho completo de la pantalla */
+  height: 100%; /* Alto completo de la pantalla */
+  background: rgba(0,0,0,0.4); /* Fondo semi-transparente */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
 }
 
+/* Contenido del modal */
 .modal-content {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  width: 300px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background: white; /* Fondo blanco */
+  padding: 2rem; /* Espaciado interno generoso */
+  border-radius: 8px; /* Bordes redondeados */
+  width: 300px; /* Ancho fijo */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Sombra más pronunciada */
 }

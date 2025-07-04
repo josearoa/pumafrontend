@@ -1,55 +1,70 @@
+/* ===== CONTENEDOR PRINCIPAL DEL LOGIN ===== */
+/* Contenedor que ocupa toda la pantalla y centra el formulario */
 .login-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f5f6f8;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  height: 100vh; /* Altura completa de la ventana */
+  background-color: #f5f6f8; /* Fondo gris claro */
 }
 
+/* ===== CAJA DEL FORMULARIO DE LOGIN ===== */
+/* Contenedor del formulario con estilos de tarjeta */
 .login-box {
-  background: #fff;
-  padding: 2rem 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  width: 350px;
+  background: #fff; /* Fondo blanco */
+  padding: 2rem 2.5rem; /* Espaciado interno generoso */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra sutil para efecto de elevación */
+  text-align: center; /* Texto centrado */
+  width: 350px; /* Ancho fijo de la caja */
 }
 
+/* ===== LOGO DE PUMA ===== */
+/* Estilos para el logo en la parte superior */
 .login-logo {
-  width: 100px;
-  margin-bottom: 1rem;
+  width: 100px; /* Ancho fijo del logo */
+  margin-bottom: 1rem; /* Espaciado inferior */
 }
 
+/* ===== TÍTULO DEL LOGIN ===== */
+/* Estilos para el título "Login Puma OM App Chile" */
 .login-box h2 {
-  margin-bottom: 1.5rem;
-  color: #333;
+  margin-bottom: 1.5rem; /* Espaciado inferior */
+  color: #333; /* Color gris oscuro */
 }
 
+/* ===== CAMPOS DE ENTRADA (INPUT) ===== */
+/* Estilos para los campos de usuario y contraseña */
 .login-box input {
-  width: 100%;
-  padding: 10px;
-  margin: 0.5rem 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  width: 100%; /* Ancho completo de la caja */
+  padding: 10px; /* Espaciado interno */
+  margin: 0.5rem 0; /* Margen vertical para separación */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 6px; /* Bordes ligeramente redondeados */
 }
 
+/* ===== BOTÓN DE LOGIN ===== */
+/* Estilos para el botón "Ingresar" */
 .login-box button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  margin-top: 1rem;
-  cursor: pointer;
+  width: 100%; /* Ancho completo de la caja */
+  padding: 10px; /* Espaciado interno */
+  background-color: #007bff; /* Fondo azul */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 6px; /* Bordes redondeados */
+  margin-top: 1rem; /* Margen superior */
+  cursor: pointer; /* Cursor de mano para indicar interacción */
 }
 
+/* Efecto hover del botón de login */
 .login-box button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Azul más oscuro al hover */
 }
 
+/* ===== MENSAJE DE ERROR ===== */
+/* Estilos para mostrar errores de autenticación */
 .error {
-  color: red;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
+  color: red; /* Texto rojo para indicar error */
+  margin-top: 0.5rem; /* Margen superior pequeño */
+  font-size: 0.9rem; /* Tamaño de fuente ligeramente menor */
 }
