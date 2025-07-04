@@ -1,0 +1,114 @@
+.upload-section,
+.history-section {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  width: 95%;
+  max-width: 1000px;
+}
+
+.upload-section h2,
+.history-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.upload-section input[type="file"] {
+  margin-right: 10px;
+  font-size: 0.95rem;
+}
+
+.upload-section button {
+  padding: 5px 15px;
+  font-size: 0.95rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-section button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #f8f9fa;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.status.aprobado {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.pendiente {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.client-header.improved {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.client-header .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.client-header .client-logo {
+  height: 60px;
+  object-fit: contain;
+}
+
+.client-header .client-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.client-header .center .welcome-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.client-header .right {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007bff;
+  cursor: pointer;
+}
